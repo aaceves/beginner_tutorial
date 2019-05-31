@@ -35,8 +35,9 @@ rostopic type chatter
 rosmsg show std_msgs/String
 rqt_graph
 ```
-Cuando se desea ejecutar nodos escritos en Python, no es necesario compilar nada con catkin pero si es vital cambiar los permisos de los archivos talker.py y listener.py para que tengan permisos de ejecución. Esto se hace con los siguientes comandos:
+Cuando se desea ejecutar nodos escritos en Python, no es necesario compilar nada con `catkin` pero si es vital cambiar los permisos de los archivos `talker.py` y `listener.py` para que tengan permisos de ejecución. Esto se hace con los siguientes comandos:
 ```
+$ cd ~/catkin_ws/src/beginner_tutorial/src 
 $ chmod +x talker.py
 $ chmod +x listener.py
 ```
