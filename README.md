@@ -10,7 +10,7 @@ En una Terminal ejecutar las siguientes instrucciones:
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/aaceves/beginner_tutorial.git
-$ cd  ..
+$ cd ~/catkin_ws
 $ catkin build
 $ source devel/setup.bash
 ```
