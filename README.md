@@ -35,6 +35,17 @@ rostopic type chatter
 rosmsg show std_msgs/String
 rqt_graph
 ```
+Cuando se desea ejecutar nodos escritos en Python, no es necesario compilar nada con catkin pero si es vital cambiar los permisos de los archivos talker.py y listener.py para que tengan permisos de ejecución. Esto se hace con los siguientes comandos:
+```
+$ chmod +x talker.py
+$ chmod +x listener.py
+```
+Ahora, en tres Terminales diferentes ejecutar cada una de las siguientes lineas:
+```
+$ roscore
+$ rosrun beginner_tutorial talker.py
+$ rosrun beginner_tutorial listener.py
+```
 
 ## Autores y colaboradores
 Este paquete está originalmente presentado en el wiki de ROS en la sección de Beginners Level. Sin embargo fue ajustado ligeramente por el Dr. Alejandro Aceves-López para que sea más comprensible a los programadores nuevos de ROS.
