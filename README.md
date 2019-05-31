@@ -18,11 +18,22 @@ El proceso de compilación debe terminar sin errores.
 
 ## Ejemplo de ejecución
 
-En una Terminal ejecutar las siguientes lineas:
+En tres Terminales diferentes ejecutar cada una de las siguientes lineas:
 ```
 $ roscore
 $ rosrun beginner_tutorial talker
 $ rosrun beginner_tutorial listener
+```
+Ejecutar en una cuarta Terminal las siguientes líneas y analizar sus resultados:
+```
+rosnode list
+rosnode info listener
+rostopic list
+rostopic info chatter
+rostopic hz chatter
+rostopic type chatter
+rosmsg show std_msgs/String
+rqt_graph
 ```
 
 ## Autores y colaboradores
