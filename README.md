@@ -52,4 +52,5 @@ $ rosrun beginner_tutorial listener.py
 Este paquete está originalmente presentado en el wiki de ROS en la sección de Beginners Level. Sin embargo fue ajustado ligeramente por el Dr. Alejandro Aceves-López para que sea más comprensible a los programadores nuevos de ROS.
 
 ## Referencias
-1. ROS Tutorials - Beginner Level, "Writing a Simple Publisher and Subscriber (C++)",  [link](http://wiki.ros.org/ROS/Tutorials).
+1. ROS Tutorials - Beginner Level, "Writing a Simple Publisher and Subscriber (C++)", [link](http://wiki.ros.org/ROS/Tutorials).   
+2. ROS Tutorials - Beginner Level, "Writing a Simple Publisher and Subscriber (Python)", [link](http://wiki.ros.org/ROS/Tutorials).   
