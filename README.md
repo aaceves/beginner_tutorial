@@ -8,11 +8,11 @@ Se considera que la computadora del usuario ya tiene correctamente instalado ROS
 
 En una Terminal ejecutar las siguientes instrucciones:
 ```
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/aaceves/beginner_tutorial.git
-$ cd ~/catkin_ws
-$ catkin build
-$ source devel/setup.bash
+cd ~/catkin_ws/src
+git clone https://github.com/aaceves/beginner_tutorial.git
+cd ~/catkin_ws
+catkin build
+source devel/setup.bash
 ```
 El proceso de compilación debe terminar sin errores.
 
@@ -20,9 +20,9 @@ El proceso de compilación debe terminar sin errores.
 
 En tres Terminales diferentes ejecutar cada una de las siguientes lineas:
 ```
-$ roscore
-$ rosrun beginner_tutorial talker
-$ rosrun beginner_tutorial listener
+roscore
+rosrun beginner_tutorial talker
+rosrun beginner_tutorial listener
 ```
 Ejecutar en una cuarta Terminal las siguientes líneas y analizar sus resultados:
 ```
@@ -37,15 +37,15 @@ rqt_graph
 ```
 Cuando se desea ejecutar nodos escritos en Python, no es necesario compilar nada con `catkin` pero si es vital cambiar los permisos de los archivos `talker.py` y `listener.py` para que tengan permisos de ejecución. Esto se hace con los siguientes comandos:
 ```
-$ cd ~/catkin_ws/src/beginner_tutorial/src 
-$ chmod +x talker.py
-$ chmod +x listener.py
+cd ~/catkin_ws/src/beginner_tutorial/src 
+chmod +x talker.py
+chmod +x listener.py
 ```
 Ahora, en tres Terminales diferentes ejecutar cada una de las siguientes lineas:
 ```
-$ roscore
-$ rosrun beginner_tutorial talker.py
-$ rosrun beginner_tutorial listener.py
+roscore
+rosrun beginner_tutorial talker.py
+rosrun beginner_tutorial listener.py
 ```
 
 ## Autores y colaboradores
